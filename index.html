@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraiser</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+
+      
+      <div class="logo">
+        <img src ="/images/logo.png">
+        <a href="#">Wild World Funds</a>
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="https://join.wwfindia.org/">Learn More</a></li>
+        <li><a href="#socials">Contact</a></li>
+      </ul>
+
+
+      <div class="icon menu-btn">
+
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="banner">
+    
+    <div class="contact">
+      <button class="noselect"  onclick="window.location.href = '#donate';">DONATE</button>
+      <button class="noselect"  onclick="window.location.href = 'https://www.youtube.com/watch?v=MNmNY95jGIA';">WATCH NOW</button>
+      <button class="noselect"  onclick="window.location.href = 'https://join.wwfindia.org/';">LEARN MORE</button>
+      
+
+  </div>
+  </div>
+
+
+
+  <section id="section2" class="section2">
+    <div class="heading">
+      <h1>ABOUT THE SITE</h1>
+    </div>
+
+    <div class="content">
+        <div class="content1">
+            <p> Our objective has been to work in partnership with indigeneous communities and Governments to
+              help protect India's biodiversity wealth.
+              It includes addressing the welfare & protection of a single animal as well as protecting an
+              entire species. <br>
+              We believe in sustainable goals that we can achieve as a team with community & public
+              participation.
+                <br>
+                
+            </p>
+        </div>
+
+        <div class="video">
+          <iframe width="630" height="400" src="https://www.youtube.com/embed/MNmNY95jGIA"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        </div>
+
+        <div id="donate">
+          <div class="donate_lines">
+              Our planet is in trouble, and we need to act.<br>
+              A little contribution can’t change the world but it can change countless's world.
+
+              <div class="buttons">
+                  <div class="container">
+                      <a href="payment.html" class="btn effect01" ><span>Donate Now</span></a>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+<div id="socials" class="bottom-container">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <a class="linkbtn linkbtn-icon linkbtn-linkedin" href="https://www.linkedin.com/in/reshmi-maity-24135a212/"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+      <a class="linkbtn linkbtn-icon linkbtn-twitter" href="https://twitter.com/FelixReshmi"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+
+      <a class="linkbtn linkbtn-icon linkbtn-whatsapp" href="https://wa.link/wggbjp"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a>
+
+      <a class="linkbtn linkbtn-icon linkbtn-github" href="https://github.com/reshmi0123"><i class="fa fa-github"></i><span>Github</span></a>
+
+      <a class="linkbtn linkbtn-icon linkbtn-mail" href="mailto:reshmimata@gmail.com"><i class="fa fa-envelope"></i><span>Mail</span></a>
+
+      <a class="linkbtn linkbtn-icon linkbtn-phone" href="tel:8298988886"><i class="fa fa-phone"></i><span>Phone</span></a>
+</div>
+  
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>

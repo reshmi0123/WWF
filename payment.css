@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/chris-ponzi-8fPAgCoAY_E-unsplash.jpg");
+    /* margin-top:283px; */
+    margin-top:50px;
+    height: 91vh;
+    /* height: 900px; */
+    width: 750px;
+    -webkit-background-size: auto;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+.razorpay-embed-btn{
+    position: absolute;
+    bottom:1%;
+    margin-left: 950px;
+    /* right: 10rem; */
+
+}
+
+
